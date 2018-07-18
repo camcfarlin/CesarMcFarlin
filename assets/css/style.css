@@ -1,11 +1,16 @@
 /********************************
 COLORS 
 
-Orange - FFA002
-Mid Orange - E87402 
-Main -  E87402
-maroon - E87402
-Red - FF1102
+Orange - #FFA002
+Mid Orange - #E87402 
+Main -  #E87402
+maroon - #E83102
+Red - #FF1102
+
+Complimentary - Blue
+
+#00789B
+light blue = #02B4E8
 ********************************/
 
 /********************************
@@ -13,7 +18,10 @@ FONT USE
 font-family: 'Poppins', sans-serif;
 https://fonts.google.com/specimen/Poppins
 ********************************/
-
+body {
+    font-family: 'Poppins', sans-serif;
+   
+}
 
 /********************************
 HEADER
@@ -24,10 +32,19 @@ HEADER
 }
 
 #logo {
+    font-size: 3rem;
+    color: #fff;
+    background-image: linear-gradient(to top, #00789B 0%, #02B4E8 30%), url(../images/wbg_pattern.png);
+    background-blend-mode: multiply;
+    height: 200px;
 
+    
 }
 
 h1 {
+    color: #E87402;
+    text-align:  center;
+  
 
 }
 .navigation {
@@ -38,8 +55,8 @@ h1 {
 
 }
 
-nav {
-
+nav a {
+    color: #FFA002;
 }
 
 /********************************
@@ -54,14 +71,16 @@ PORTFOLIO
 }
 
 h3 {
-
+    color: #E83102;
+    text-align:  center;
 }
 /********************************
 ABOUT ME
 ********************************/
 
 .about {
-
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 /********************************
@@ -75,7 +94,7 @@ CONNECT
 FOOTER
 ********************************/
 footer{
-
+    text-align:  center;
 }
 
 /********************************
