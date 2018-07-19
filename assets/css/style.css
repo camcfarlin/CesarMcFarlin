@@ -18,27 +18,71 @@ FONT USE
 font-family: 'Poppins', sans-serif;
 https://fonts.google.com/specimen/Poppins
 ********************************/
+
+/********************************
+GRID LAYOUT
+********************************/
 body {
-    font-family: 'Poppins', sans-serif;
-   
+    font-family: 'Poppins', sans-serif; 
 }
+
+header,
+footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+    grid-column: 1 / 3;
+    width: 100%;
+    border-color: #00789B;
+    border-width: .5em;
+}
+
+
+footer {
+    padding-top: 5px;
+    border-top: solid;
+    /* bottom: 0; */
+    background: #666666;
+    height: 10vw;;
+}
+
+
+@media (min-width: 350px) {
+    .img {
+    align-content: center;
+    }
+}
+
+/* Demo Specific Styles */
+body {
+  margin: 0 auto;
+  max-width: 56em;
+  padding: 1em 0;
+}
+
+header,
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 
 /********************************
 HEADER
 ********************************/
-
-.header {
-
-}
-
-#logo {
+header {
+    /* top: 0; */
     font-size: 3rem;
     color: #fff;
     background-image: linear-gradient(to top, #00789B 0%, #02B4E8 30%), url(../images/wbg_pattern.png);
     background-blend-mode: multiply;
-    height: 200px;
+    height: 20vw;;
+    margin-bottom: 5px;
+}
 
-    
+#logo { 
 }
 
 h1 {
@@ -48,31 +92,48 @@ h1 {
 
 }
 .navigation {
-
+    display: none;
 }
 
 #nav {
-
 }
 
 nav a {
     color: #FFA002;
+    
 }
 
-/********************************
+/***********1********************
 PORTFOLIO
 ********************************/
+.work:nth-child(even) {
+   grid-column: auto/3;
+  
+}
+.work {
+   /* margin: auto;
+    width: 50%; */
+  
+}
 .portfolio {
-
+    display: grid;
+    grid-gap: 2px;
+    /* grid-column: repeat(2, 1fr); */
+    /* grid-template-columns: repate(auto-fit, minmax (100px,1fr)); */
+    /* grid-auto-rows: 250px; */
+    /* grid-column: 1/ 3; */
 }
 
-.class {
-
+img {
+    /* display: inline-block; */
+    max-width: 200px;
+    height: auto;
 }
 
 h3 {
     color: #E83102;
     text-align:  center;
+    /* position: relative; */
 }
 /********************************
 ABOUT ME
@@ -81,21 +142,37 @@ ABOUT ME
 .about {
     text-align: justify;
     text-justify: inter-word;
+    display: block;
+    grid-column: 1/3;
 }
 
 /********************************
 CONNECT
 ********************************/
 .connect {
-
 }
 
 /********************************
 FOOTER
 ********************************/
-footer{
-    text-align:  center;
+/* footer {
+	padding-top: 5px;
+	background: #666666;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	border-top: solid;
+	border-color: #00789B;
+	border-width: .5em;
+} */
+
+footer p {
+	color: #ccc;
+	font-size: .74em;
+	text-align: center;
+	clear: both;
 }
+
 
 /********************************
 ANIMATIONS
