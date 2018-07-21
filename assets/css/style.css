@@ -79,11 +79,24 @@ header {
     color: #fff;
     background-image: linear-gradient(to top, #00789B 0%, #02B4E8 30%), url(../images/wbg_pattern.png);
     background-blend-mode: multiply;
-    height: 150vw;
-    margin-bottom: 30px;
+    height: 160vw;
+    margin-bottom: 50px;
 }
 
 
+header:after {
+    content:'';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-top: solid 20px #00789B;
+    border-left: solid 20px transparent;
+    border-right: solid 20px transparent;
+}
 #logo { 
 }
 
