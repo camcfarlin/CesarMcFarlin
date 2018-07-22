@@ -201,7 +201,12 @@ ABOUT ME
 /********************************
 CONNECT
 ********************************/
+.connect > img {
+    width: 60px;
+}
+
 .connect {
+    text-align: center;
 }
 
 /********************************
@@ -260,22 +265,11 @@ ANIMATIONS
         width: 56.6%;
         margin-left: 104px;
     }
-    .work h3 {
-        position: absolute;
-        bottom: 20px;
-        width: 90%;
-        padding: 9px;
-        margin-bottom: 0;
-        font-weight: 300;
-        line-height: 3px;
-        color: #fff;
-        text-align: center;
-        background: #02B4E8;
-        border-bottom: 0;
-      }
+
     
     .pImg{
         width: 50%;
+        margin-bottom: 10px;
         box-shadow: 0 10px 6px -6px black;
         
     }
@@ -298,8 +292,8 @@ ANIMATIONS
     } */
 
     .about {
-
-        width: 40%;
+        line-height: 2;
+        width: 60%;
         
     }
 }
