@@ -264,12 +264,21 @@ ANIMATIONS
         margin: 0 auto;
         width: 56.6%;
         margin-left: 104px;
+            position: absolute;
+            padding: 9px;
+            color: #fff;
+            /* text-align: center; */
+            background: #02B4E8;
+            border-bottom: 0;
+            bottom: 10%;
+            left: 50%;
+            transform: translate(-80%);
     }
 
     
     .pImg{
-        width: 50%;
-        margin-bottom: 10px;
+        width: 60%;
+        margin-bottom: 15px;
         box-shadow: 0 10px 6px -6px black;
         
     }
