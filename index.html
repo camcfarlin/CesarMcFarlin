@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Cesar McFarlin | Developer Portfolio</title>
-        <meta name="description" content="Portfolio website for Cesar McFarlin, a developer with a background in finance, operations, and web applications.">
+        <title>Cesar McFarlin | Product Support & SQL Developer</title>
+        <meta name="description" content="Portfolio website for Cesar McFarlin, a product support specialist and SQL developer focused on troubleshooting, reporting, and practical internal tools.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,160 +13,196 @@
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     </head>
     <body>
+        <!--
+            EDIT NOTES:
+            1. Main words and project cards are in this file.
+            2. Colors, spacing, and layout are in assets/css/style.css.
+            3. Ledger Pro is listed but not linked because it is private.
+            4. To add a public GitHub project, copy one project-card and update the link/text.
+        -->
+
         <nav class="site-nav" aria-label="Main navigation">
-            <a class="brand" href="#top">CM</a>
+            <a class="brand" href="#top" aria-label="Back to top"><span>CM</span> Cesar McFarlin</a>
             <div class="nav-links">
-                <a href="#work">Work</a>
                 <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
                 <a href="#contact">Contact</a>
+                <a class="github-link" href="https://github.com/camcfarlin">GitHub</a>
             </div>
         </nav>
 
         <header class="hero" id="top">
             <div class="hero-copy">
-                <p class="eyebrow">Denver, Colorado</p>
-                <h1>Simple, useful web experiences.</h1>
-                <p class="hero-title">I’m Cesar McFarlin, a developer who brings together finance experience, production-support thinking, and clean front-end design.</p>
+                <p class="eyebrow">Product Support Specialist &amp; SQL Developer</p>
+                <h1>Hi, I’m Cesar McFarlin.</h1>
+                <p class="hero-title">I help teams solve production issues, improve workflows, and turn data into clear, actionable insights.</p>
                 <div class="hero-actions">
-                    <a class="button primary" href="#work">View Projects</a>
-                    <a class="button secondary" href="https://www.linkedin.com/in/camcfarlin/">LinkedIn</a>
+                    <a class="button primary" href="#projects">View Projects</a>
+                    <a class="button secondary" href="#contact">Contact Me</a>
                 </div>
             </div>
-            <aside class="hero-card" aria-label="Portfolio summary">
-                <img src="assets/images/cesar.jpg" alt="Cesar McFarlin">
-                <div>
-                    <span>Developer Portfolio</span>
-                    <strong>Cesar McFarlin</strong>
-                    <p>Finance background. Builder mindset. Focused on practical, maintainable interfaces.</p>
+
+            <div class="hero-visual" aria-hidden="true">
+                <div class="code-window">
+                    <div class="window-dots"><span></span><span></span><span></span></div>
+                    <div class="code-lines">
+                        <span></span><span></span><span></span><span></span><span></span>
+                    </div>
+                    <strong>SQL</strong>
                 </div>
-            </aside>
+                <div class="chart-card">
+                    <div class="bar-chart"><span></span><span></span><span></span><span></span></div>
+                    <div class="donut-chart"></div>
+                </div>
+                <div class="database-badge">DB</div>
+            </div>
         </header>
 
         <main>
-            <section class="section intro" aria-labelledby="intro-heading">
-                <p class="eyebrow">Portfolio</p>
-                <h2 id="intro-heading">A focused collection of projects built with HTML, CSS, JavaScript, APIs, and collaborative delivery.</h2>
+            <section class="section split-section" id="about" aria-labelledby="about-heading">
+                <div>
+                    <p class="eyebrow">About Me</p>
+                    <h2 id="about-heading">Detail-oriented support professional with a developer mindset.</h2>
+                    <p>I work best at the intersection of support, data, and process improvement. My background includes product support, SQL troubleshooting, reporting, production issue analysis, and building practical tools that make work easier for teams.</p>
+                    <p>I care about clear communication, reliable systems, and documentation that helps people solve problems faster.</p>
+
+                    <div class="strength-list" aria-label="Professional strengths">
+                        <div>
+                            <span class="icon">☏</span>
+                            <div>
+                                <strong>Product Support</strong>
+                                <p>Investigate issues, collaborate with teams, and deliver clear resolution paths.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="icon">▣</span>
+                            <div>
+                                <strong>SQL Development</strong>
+                                <p>Write queries, validate data, build reports, and support operational analysis.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="icon">↗</span>
+                            <div>
+                                <strong>Data Insights</strong>
+                                <p>Turn raw information into reports and summaries that support better decisions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="skills-card" id="skills" aria-labelledby="skills-heading">
+                    <p class="eyebrow">Core Skills</p>
+                    <h2 id="skills-heading">Tools I use</h2>
+                    <div class="skill-grid">
+                        <span>SQL / T-SQL</span>
+                        <span>SQL Server</span>
+                        <span>MySQL</span>
+                        <span>Excel</span>
+                        <span>Power BI</span>
+                        <span>Data Analysis</span>
+                        <span>Reporting</span>
+                        <span>Problem Solving</span>
+                        <span>Jira</span>
+                        <span>Confluence</span>
+                    </div>
+                </aside>
             </section>
 
-            <section class="section portfolio" id="work" aria-labelledby="work-heading">
-                <div class="section-heading">
-                    <p class="eyebrow">Selected Work</p>
-                    <h2 id="work-heading">Featured Projects</h2>
+            <section class="section projects-section" id="projects" aria-labelledby="projects-heading">
+                <div class="section-heading centered">
+                    <p class="eyebrow">Featured Projects</p>
+                    <h2 id="projects-heading">Builds, tools, and GitHub work</h2>
+                    <p>A mix of public projects and private tools that show practical problem solving, reporting, and application-building skills.</p>
                 </div>
 
                 <div class="project-grid">
                     <article class="project-card">
                         <a href="http://camcfarlin.github.io/walk-and-learn/">
-                            <img class="project-image" src="assets/images/walk-and-learn.png" alt="Walk and Learn project screenshot">
-                            <div class="project-content">
-                                <span class="project-meta">Travel + Learning</span>
-                                <h3>Walk and Learn</h3>
-                                <p>A walking-tour experience focused on discovery, location, and lightweight interaction.</p>
-                                <span class="project-link">View Project</span>
-                            </div>
+                            <span class="project-icon">⌖</span>
+                            <h3>Walk and Learn</h3>
+                            <p>A location-focused web project that combines lightweight interaction, user flow, and front-end fundamentals.</p>
+                            <ul>
+                                <li>Responsive page structure</li>
+                                <li>Interactive user experience</li>
+                                <li>Public GitHub build</li>
+                            </ul>
+                            <span class="tag">Front-End</span>
+                            <span class="project-link">View Project</span>
                         </a>
                     </article>
 
                     <article class="project-card">
-                        <a href="https://camcfarlin.github.io/GemCollector/">
-                            <img class="project-image" src="assets/images/cyrstal-collector.png" alt="Crystal Collector game screenshot">
-                            <div class="project-content">
-                                <span class="project-meta">JavaScript Game</span>
-                                <h3>Crystal Collector</h3>
-                                <p>A browser game using state, score tracking, and event-driven JavaScript.</p>
-                                <span class="project-link">View Project</span>
-                            </div>
+                        <a href="https://camcfarlin.github.io/TrainSchedule/">
+                            <span class="project-icon green">▥</span>
+                            <h3>Train Schedule</h3>
+                            <p>A scheduling app built around data entry, time calculations, and dynamic updates.</p>
+                            <ul>
+                                <li>Time-based logic</li>
+                                <li>Structured data display</li>
+                                <li>JavaScript workflow</li>
+                            </ul>
+                            <span class="tag">JavaScript</span>
+                            <span class="project-link">View Project</span>
                         </a>
                     </article>
 
-                    <article class="project-card">
-                        <a href="https://camcfarlin.github.io/TriviaGame/">
-                            <img class="project-image" src="assets/images/dnd.png" alt="Dungeons and Dragons trivia game screenshot">
-                            <div class="project-content">
-                                <span class="project-meta">Timed Quiz</span>
-                                <h3>DnD Trivia</h3>
-                                <p>A themed trivia game built around timing, feedback, and clear game-flow logic.</p>
-                                <span class="project-link">View Project</span>
-                            </div>
-                        </a>
-                    </article>
-
-                    <article class="project-card">
-                        <a href="http://camcfarlin.github.io/TrainSchedule/">
-                            <img class="project-image" src="assets/images/nycmta.png" alt="Train Schedule app screenshot">
-                            <div class="project-content">
-                                <span class="project-meta">Scheduling Tool</span>
-                                <h3>Train Schedule</h3>
-                                <p>A transit schedule project for data entry, time calculations, and UI updates.</p>
-                                <span class="project-link">View Project</span>
-                            </div>
-                        </a>
-                    </article>
-
-                    <article class="project-card">
-                        <a href="https://camcfarlin.github.io/GifTastic/">
-                            <img class="project-image" src="assets/images/giphyapi.png" alt="GifTastic project screenshot">
-                            <div class="project-content">
-                                <span class="project-meta">API Project</span>
-                                <h3>GifTastic</h3>
-                                <p>A GIF search interface using the GIPHY API and dynamic page rendering.</p>
-                                <span class="project-link">View Project</span>
-                            </div>
-                        </a>
-                    </article>
-
-                    <article class="project-card">
-                        <a href="https://shoescodefor.github.io/CatchOfTheDay/">
-                            <img class="project-image" src="assets/images/tdc.png" alt="Catch of the Day app screenshot">
-                            <div class="project-content">
-                                <span class="project-meta">Team Build</span>
-                                <h3>Catch of the Day</h3>
-                                <p>A collaborative app focused on shared features, design decisions, and delivery.</p>
-                                <span class="project-link">View Project</span>
-                            </div>
-                        </a>
+                    <article class="project-card private-project">
+                        <div>
+                            <span class="project-icon purple">&lt;/&gt;</span>
+                            <h3>Ledger Pro</h3>
+                            <p>A private double-entry bookkeeping app designed for rental property management, owner allocations, and reporting.</p>
+                            <ul>
+                                <li>Multi-property tracking</li>
+                                <li>Owner balance reports</li>
+                                <li>Built with vanilla JS, HTML, and CSS</li>
+                            </ul>
+                            <span class="tag">Private Web App</span>
+                            <span class="project-link muted-link">Private repository</span>
+                        </div>
                     </article>
                 </div>
+
+                <p class="github-note">More public builds and contributions are available on <a href="https://github.com/camcfarlin">GitHub</a>.</p>
             </section>
 
-            <section class="section about-section" id="about" aria-labelledby="about-heading">
-                <div class="about-copy">
-                    <p class="eyebrow">About</p>
-                    <h2 id="about-heading">Business-minded developer with a practical approach to building.</h2>
-                    <p>Originally from New York City and now based in Denver, I bring a finance and operations background to web development. I like clean interfaces, clear data, and tools that make everyday work easier.</p>
-                    <p>My experience spans HTML, CSS, JavaScript, jQuery, CSS Grid, Bootstrap, and growing full-stack tools including MongoDB, Express, React, and Node.js.</p>
+            <section class="section experience-section" id="experience" aria-labelledby="experience-heading">
+                <div class="section-heading">
+                    <p class="eyebrow">Experience</p>
+                    <h2 id="experience-heading">What this portfolio communicates</h2>
                 </div>
-                <div class="about-list" aria-label="Skills and strengths">
+                <div class="experience-grid">
                     <div>
-                        <span>01</span>
-                        <strong>Frontend foundations</strong>
-                        <p>HTML, CSS, responsive layouts, and browser-based JavaScript.</p>
+                        <strong>Reliable support mindset</strong>
+                        <p>Comfortable investigating issues, working through ambiguity, and keeping users and teams informed.</p>
                     </div>
                     <div>
-                        <span>02</span>
-                        <strong>Data and operations</strong>
-                        <p>Finance, reporting, production support, and practical problem solving.</p>
+                        <strong>SQL and reporting focus</strong>
+                        <p>Able to query, validate, summarize, and explain data in a way that supports operations.</p>
                     </div>
                     <div>
-                        <span>03</span>
-                        <strong>Modern stack growth</strong>
-                        <p>React, Node.js, Express, MongoDB, and maintainable app structure.</p>
+                        <strong>Builder energy</strong>
+                        <p>Interested in improving workflows through simple tools, clean documentation, and practical automation.</p>
                     </div>
                 </div>
             </section>
         </main>
 
         <section class="contact" id="contact" aria-labelledby="contact-heading">
-            <p class="eyebrow">Connect</p>
-            <h2 id="contact-heading">Let’s connect about development, operations, or product-minded work.</h2>
+            <div>
+                <p class="eyebrow">Let’s Connect</p>
+                <h2 id="contact-heading">Open to product support, SQL, reporting, and technical operations conversations.</h2>
+            </div>
             <div class="contact-links">
-                <a class="button primary" href="https://github.com/camcfarlin">GitHub</a>
-                <a class="button secondary" href="https://www.linkedin.com/in/camcfarlin/">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/camcfarlin/">LinkedIn</a>
+                <a href="https://github.com/camcfarlin">GitHub</a>
             </div>
         </section>
 
         <footer>
-            <p>Copyright &copy; 2026 Cesar McFarlin</p>
+            <p>Copyright &copy; 2026 Cesar McFarlin. All rights reserved.</p>
         </footer>
     </body>
 </html>
