@@ -3,18 +3,18 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Cesar McFarlin | Full-Stack Developer</title>
-        <meta name="description" content="Portfolio website for Cesar McFarlin, a full-stack developer based in Denver, Colorado.">
+        <title>Cesar McFarlin | Developer Portfolio</title>
+        <meta name="description" content="Portfolio website for Cesar McFarlin, a developer with a background in finance, operations, and web applications.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     </head>
     <body>
         <nav class="site-nav" aria-label="Main navigation">
-            <a class="brand" href="#top">Cesar McFarlin</a>
+            <a class="brand" href="#top">CM</a>
             <div class="nav-links">
                 <a href="#work">Work</a>
                 <a href="#about">About</a>
@@ -24,22 +24,28 @@
 
         <header class="hero" id="top">
             <div class="hero-copy">
-                <p class="eyebrow">Denver-based developer</p>
-                <h1>Cesar McFarlin</h1>
-                <p class="hero-title">Full-Stack Developer blending finance, product thinking, and clean web experiences.</p>
+                <p class="eyebrow">Denver, Colorado</p>
+                <h1>Simple, useful web experiences.</h1>
+                <p class="hero-title">I’m Cesar McFarlin, a developer who brings together finance experience, production-support thinking, and clean front-end design.</p>
                 <div class="hero-actions">
-                    <a class="button primary" href="#work">View Work</a>
-                    <a class="button secondary" href="#contact">Get in Touch</a>
+                    <a class="button primary" href="#work">View Projects</a>
+                    <a class="button secondary" href="https://www.linkedin.com/in/camcfarlin/">LinkedIn</a>
                 </div>
             </div>
-            <div class="hero-image" aria-label="Portrait of Cesar McFarlin"></div>
+            <aside class="hero-card" aria-label="Portfolio summary">
+                <img src="assets/images/cesar.jpg" alt="Cesar McFarlin">
+                <div>
+                    <span>Developer Portfolio</span>
+                    <strong>Cesar McFarlin</strong>
+                    <p>Finance background. Builder mindset. Focused on practical, maintainable interfaces.</p>
+                </div>
+            </aside>
         </header>
 
         <main>
             <section class="section intro" aria-labelledby="intro-heading">
                 <p class="eyebrow">Portfolio</p>
-                <h2 id="intro-heading">Projects built around interaction, data, and everyday usefulness.</h2>
-                <p>These projects trace my path through front-end fundamentals, browser-based games, API-driven pages, and collaborative application work.</p>
+                <h2 id="intro-heading">A focused collection of projects built with HTML, CSS, JavaScript, APIs, and collaborative delivery.</h2>
             </section>
 
             <section class="section portfolio" id="work" aria-labelledby="work-heading">
@@ -51,13 +57,11 @@
                 <div class="project-grid">
                     <article class="project-card">
                         <a href="http://camcfarlin.github.io/walk-and-learn/">
-                            <div class="project-media">
-                                <img class="project-image" src="assets/images/walk-and-learn.png" alt="Walk and Learn project screenshot">
-                            </div>
+                            <img class="project-image" src="assets/images/walk-and-learn.png" alt="Walk and Learn project screenshot">
                             <div class="project-content">
+                                <span class="project-meta">Travel + Learning</span>
                                 <h3>Walk and Learn</h3>
-                                <span class="project-meta">Travel and learning</span>
-                                <p>A walking-tour experience focused on discovery, place, and lightweight interaction.</p>
+                                <p>A walking-tour experience focused on discovery, location, and lightweight interaction.</p>
                                 <span class="project-link">View Project</span>
                             </div>
                         </a>
@@ -65,13 +69,11 @@
 
                     <article class="project-card">
                         <a href="https://camcfarlin.github.io/GemCollector/">
-                            <div class="project-media">
-                                <img class="project-image" src="assets/images/cyrstal-collector.png" alt="Crystal Collector game screenshot">
-                            </div>
+                            <img class="project-image" src="assets/images/cyrstal-collector.png" alt="Crystal Collector game screenshot">
                             <div class="project-content">
+                                <span class="project-meta">JavaScript Game</span>
                                 <h3>Crystal Collector</h3>
-                                <span class="project-meta">JavaScript game</span>
-                                <p>A browser game that uses state, score tracking, and event-driven JavaScript.</p>
+                                <p>A browser game using state, score tracking, and event-driven JavaScript.</p>
                                 <span class="project-link">View Project</span>
                             </div>
                         </a>
@@ -79,13 +81,11 @@
 
                     <article class="project-card">
                         <a href="https://camcfarlin.github.io/TriviaGame/">
-                            <div class="project-media">
-                                <img class="project-image" src="assets/images/dnd.png" alt="Dungeons and Dragons trivia game screenshot">
-                            </div>
+                            <img class="project-image" src="assets/images/dnd.png" alt="Dungeons and Dragons trivia game screenshot">
                             <div class="project-content">
+                                <span class="project-meta">Timed Quiz</span>
                                 <h3>DnD Trivia</h3>
-                                <span class="project-meta">Timed quiz</span>
-                                <p>A themed trivia game built around timing, feedback, and game-flow logic.</p>
+                                <p>A themed trivia game built around timing, feedback, and clear game-flow logic.</p>
                                 <span class="project-link">View Project</span>
                             </div>
                         </a>
@@ -93,13 +93,11 @@
 
                     <article class="project-card">
                         <a href="http://camcfarlin.github.io/TrainSchedule/">
-                            <div class="project-media">
-                                <img class="project-image" src="assets/images/nycmta.png" alt="Train Schedule app screenshot">
-                            </div>
+                            <img class="project-image" src="assets/images/nycmta.png" alt="Train Schedule app screenshot">
                             <div class="project-content">
+                                <span class="project-meta">Scheduling Tool</span>
                                 <h3>Train Schedule</h3>
-                                <span class="project-meta">Scheduling tool</span>
-                                <p>A transit schedule project for practicing data entry, time calculations, and UI updates.</p>
+                                <p>A transit schedule project for data entry, time calculations, and UI updates.</p>
                                 <span class="project-link">View Project</span>
                             </div>
                         </a>
@@ -107,12 +105,10 @@
 
                     <article class="project-card">
                         <a href="https://camcfarlin.github.io/GifTastic/">
-                            <div class="project-media">
-                                <img class="project-image" src="assets/images/giphyapi.png" alt="GifTastic project screenshot">
-                            </div>
+                            <img class="project-image" src="assets/images/giphyapi.png" alt="GifTastic project screenshot">
                             <div class="project-content">
+                                <span class="project-meta">API Project</span>
                                 <h3>GifTastic</h3>
-                                <span class="project-meta">API project</span>
                                 <p>A GIF search interface using the GIPHY API and dynamic page rendering.</p>
                                 <span class="project-link">View Project</span>
                             </div>
@@ -121,13 +117,11 @@
 
                     <article class="project-card">
                         <a href="https://shoescodefor.github.io/CatchOfTheDay/">
-                            <div class="project-media">
-                                <img class="project-image" src="assets/images/tdc.png" alt="Catch of the Day app screenshot">
-                            </div>
+                            <img class="project-image" src="assets/images/tdc.png" alt="Catch of the Day app screenshot">
                             <div class="project-content">
+                                <span class="project-meta">Team Build</span>
                                 <h3>Catch of the Day</h3>
-                                <span class="project-meta">Collaborative build</span>
-                                <p>A team project focused on combining features, design decisions, and shared delivery.</p>
+                                <p>A collaborative app focused on shared features, design decisions, and delivery.</p>
                                 <span class="project-link">View Project</span>
                             </div>
                         </a>
@@ -136,24 +130,27 @@
             </section>
 
             <section class="section about-section" id="about" aria-labelledby="about-heading">
-                <div class="about-photo">
-                    <img src="assets/images/cesar.jpg" alt="Cesar McFarlin">
-                </div>
                 <div class="about-copy">
                     <p class="eyebrow">About</p>
-                    <h2 id="about-heading">A developer with a finance background and a builder's curiosity.</h2>
-                    <p>Originally from New York City and now based in Denver, Colorado, I bring a business-minded perspective to building web experiences. I studied Finance with a minor in Global Enterprise Technology at Syracuse University, then earned an MSc in International Management from Teesside University while studying at Prague College.</p>
-                    <p>I enjoy turning ideas into usable interfaces, learning new tools, and improving the details that make a project feel clear and approachable.</p>
-
-                    <div class="skill-groups" aria-label="Skills and tools">
-                        <div>
-                            <h3>Core Skills</h3>
-                            <p>HTML5, CSS3, Sass, JavaScript, jQuery, CSS Grid, Bootstrap</p>
-                        </div>
-                        <div>
-                            <h3>Growing Into</h3>
-                            <p>MongoDB, Express, React, Node.js</p>
-                        </div>
+                    <h2 id="about-heading">Business-minded developer with a practical approach to building.</h2>
+                    <p>Originally from New York City and now based in Denver, I bring a finance and operations background to web development. I like clean interfaces, clear data, and tools that make everyday work easier.</p>
+                    <p>My experience spans HTML, CSS, JavaScript, jQuery, CSS Grid, Bootstrap, and growing full-stack tools including MongoDB, Express, React, and Node.js.</p>
+                </div>
+                <div class="about-list" aria-label="Skills and strengths">
+                    <div>
+                        <span>01</span>
+                        <strong>Frontend foundations</strong>
+                        <p>HTML, CSS, responsive layouts, and browser-based JavaScript.</p>
+                    </div>
+                    <div>
+                        <span>02</span>
+                        <strong>Data and operations</strong>
+                        <p>Finance, reporting, production support, and practical problem solving.</p>
+                    </div>
+                    <div>
+                        <span>03</span>
+                        <strong>Modern stack growth</strong>
+                        <p>React, Node.js, Express, MongoDB, and maintainable app structure.</p>
                     </div>
                 </div>
             </section>
@@ -161,7 +158,7 @@
 
         <section class="contact" id="contact" aria-labelledby="contact-heading">
             <p class="eyebrow">Connect</p>
-            <h2 id="contact-heading">Want to talk through a project or opportunity?</h2>
+            <h2 id="contact-heading">Let’s connect about development, operations, or product-minded work.</h2>
             <div class="contact-links">
                 <a class="button primary" href="https://github.com/camcfarlin">GitHub</a>
                 <a class="button secondary" href="https://www.linkedin.com/in/camcfarlin/">LinkedIn</a>
