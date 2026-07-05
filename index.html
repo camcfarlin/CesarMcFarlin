@@ -1,122 +1,157 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Cesar McFarlin</title>
-        <meta name="description" content="Personal website to showcase the works of Cesar McFarlin">
+        <title>Cesar McFarlin | Full-Stack Developer</title>
+        <meta name="description" content="Portfolio website for Cesar McFarlin, a full-stack developer based in Denver, Colorado.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Poppins:300" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <header>
-        <div id="logo">
-            <h1>Cesar McFarlin</h1>
-            <h2>Full-Stack Developer</h2>
-        </div>
+        <nav class="site-nav" aria-label="Main navigation">
+            <a class="brand" href="#top">Cesar McFarlin</a>
+            <div class="nav-links">
+                <a href="#work">Work</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+
+        <header class="hero" id="top">
+            <div class="hero-copy">
+                <p class="eyebrow">Denver-based developer</p>
+                <h1>Cesar McFarlin</h1>
+                <p class="hero-title">Full-Stack Developer blending finance, product thinking, and clean web experiences.</p>
+                <div class="hero-actions">
+                    <a class="button primary" href="#work">View Work</a>
+                    <a class="button secondary" href="#contact">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-image" aria-label="Portrait of Cesar McFarlin"></div>
         </header>
 
-        <div class="navigation">
-            <h1>Cesar McFarlin</h1>
-            <nav id="nav" role="navigation">    
-                <ul>
-                    <li>
-                        <a href="#">My Work</a>
-                    </li>
-                    <li>
-                        <a href="#">About Me</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>   <!-- Navigation END  -->
-      
+        <main>
+            <section class="section intro" aria-labelledby="intro-heading">
+                <p class="eyebrow">Portfolio</p>
+                <h2 id="intro-heading">Projects built around interaction, data, and everyday usefulness.</h2>
+                <p>These projects trace my path through front-end fundamentals, browser-based games, API-driven pages, and collaborative application work.</p>
+            </section>
 
-        <div class="portfolio">
-            <div class='work'>
-                <a href="http://camcfarlin.github.io/walk-and-learn/">
-                <img class="pImg" src="assets/images/walk-and-learn.png" alt="walking tour webpage">   
-                <h3>Walk ﹠ Learn</h3>
-                </a>
+            <section class="section portfolio" id="work" aria-labelledby="work-heading">
+                <div class="section-heading">
+                    <p class="eyebrow">Selected Work</p>
+                    <h2 id="work-heading">Featured Projects</h2>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project-card">
+                        <a href="http://camcfarlin.github.io/walk-and-learn/">
+                            <img class="project-image" src="assets/images/walk-and-learn.png" alt="Walk and Learn project screenshot">
+                            <div class="project-content">
+                                <span>Travel and learning</span>
+                                <h3>Walk and Learn</h3>
+                                <p>A walking-tour experience focused on discovery, place, and lightweight interaction.</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="project-card">
+                        <a href="https://camcfarlin.github.io/GemCollector/">
+                            <img class="project-image" src="assets/images/cyrstal-collector.png" alt="Crystal Collector game screenshot">
+                            <div class="project-content">
+                                <span>JavaScript game</span>
+                                <h3>Crystal Collector</h3>
+                                <p>A browser game that uses state, score tracking, and event-driven JavaScript.</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="project-card">
+                        <a href="https://camcfarlin.github.io/TriviaGame/">
+                            <img class="project-image" src="assets/images/dnd.png" alt="Dungeons and Dragons trivia game screenshot">
+                            <div class="project-content">
+                                <span>Timed quiz</span>
+                                <h3>DnD Trivia</h3>
+                                <p>A themed trivia game built around timing, feedback, and game-flow logic.</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="project-card">
+                        <a href="http://camcfarlin.github.io/TrainSchedule/">
+                            <img class="project-image" src="assets/images/nycmta.png" alt="Train Schedule app screenshot">
+                            <div class="project-content">
+                                <span>Scheduling tool</span>
+                                <h3>Train Schedule</h3>
+                                <p>A transit schedule project for practicing data entry, time calculations, and UI updates.</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="project-card">
+                        <a href="https://camcfarlin.github.io/GifTastic/">
+                            <img class="project-image" src="assets/images/giphyapi.png" alt="GifTastic project screenshot">
+                            <div class="project-content">
+                                <span>API project</span>
+                                <h3>GifTastic</h3>
+                                <p>A GIF search interface using the GIPHY API and dynamic page rendering.</p>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="project-card">
+                        <a href="https://shoescodefor.github.io/CatchOfTheDay/">
+                            <img class="project-image" src="assets/images/tdc.png" alt="Catch of the Day app screenshot">
+                            <div class="project-content">
+                                <span>Collaborative build</span>
+                                <h3>Catch of the Day</h3>
+                                <p>A team project focused on combining features, design decisions, and shared delivery.</p>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section about-section" id="about" aria-labelledby="about-heading">
+                <div class="about-photo">
+                    <img src="assets/images/cesar.jpg" alt="Cesar McFarlin">
+                </div>
+                <div class="about-copy">
+                    <p class="eyebrow">About</p>
+                    <h2 id="about-heading">A developer with a finance background and a builder's curiosity.</h2>
+                    <p>Originally from New York City and now based in Denver, Colorado, I bring a business-minded perspective to building web experiences. I studied Finance with a minor in Global Enterprise Technology at Syracuse University, then earned an MSc in International Management from Teesside University while studying at Prague College.</p>
+                    <p>I enjoy turning ideas into usable interfaces, learning new tools, and improving the details that make a project feel clear and approachable.</p>
+
+                    <div class="skill-groups" aria-label="Skills and tools">
+                        <div>
+                            <h3>Core Skills</h3>
+                            <p>HTML5, CSS3, Sass, JavaScript, jQuery, CSS Grid, Bootstrap</p>
+                        </div>
+                        <div>
+                            <h3>Growing Into</h3>
+                            <p>MongoDB, Express, React, Node.js</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <section class="contact" id="contact" aria-labelledby="contact-heading">
+            <p class="eyebrow">Connect</p>
+            <h2 id="contact-heading">Want to talk through a project or opportunity?</h2>
+            <div class="contact-links">
+                <a class="button primary" href="https://github.com/camcfarlin">GitHub</a>
+                <a class="button secondary" href="https://www.linkedin.com/in/camcfarlin/">LinkedIn</a>
             </div>
-
-            <div class='work'>
-                <a href="https://camcfarlin.github.io/GemCollector/">
-                <img class="pImg" src="assets/images/cyrstal-collector.png" alt="cyrstal collector game">   
-                <h3>Cyrstal Collector</h3>
-                </a>
-            </div> 
-            
-            <div class='work'>
-                <a href="https://camcfarlin.github.io/TriviaGame/">
-                <img class="pImg" src="assets/images/dnd.png" alt="DND Trivia Game">   
-                <h3>DnD Trivia</h3>
-                </a>
-            </div>
-        
-            <div class='work'>
-                <a href="http://camcfarlin.github.io/TrainSchedule/">
-                <img class="pImg" src="assets/images/nycmta.png" alt="Train Schedule">   
-                <h3>Train Schedule</h3>
-                </a>
-            </div> 
-
-            <div class='work'>
-                <a href="https://camcfarlin.github.io/GifTastic/">
-                <img class="pImg" src="assets/images/giphyapi.png" alt="GifTastic">   
-                <h3>Giphtastic</h3>
-                </a>
-            </div>
-
-            <div class='work'>
-                <a href="https://shoescodefor.github.io/CatchOfTheDay/">
-                <img class="pImg" src="assets/images/tdc.png" alt="Catch of the Day">   
-                <h3>Catch of The Day</h3>
-                </a>
-            </div>  
-        </div><!-- Portfolio END  -->
-        <div class="selfie">
-            <img src="assets/images/cesar.jpg" >
-        </div>
-        <div class="about">
-            <h2>Greetings!</h2>
-            <p>Hi, I'm Cesar McFarlin! Originally from New York City but now call Denver, CO home. Received my bachelors in Finance with a minor in Global Enterprise Technology from Syracuse University.  Received a MSc in International Management from Teesside Univeristy Middlesbrough UK while studying at Prague College CZ.</p>
-            <br>
-            <p>This is my portfolio where I share all of my favorite work. When I'm not designing things, I enjoy playing video games, reading, and more.</p>
-            <br>
-            <h2>Skills</h2>
-            <p>HTML5  • CSS3 • SASS  •  jQuery • Javascript  •  CSS Grid •  Bootstrap </p>
-            <br>
-            <h2>In Process</h2>
-            <p>MongoDB  •  Express  •  React  •  NodeJS</p>
-        </div><!-- About END  -->
-
-        <div class="connect">
-                <a href="http://www.github.com/camcfarlin">
-                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-                </a>
-                
-                <a href="https://www.linkedin.com/in/camcfarlin/">
-                <img src="assets/images/In.png" width="60" height="60" alt="Linkedin profile">
-                </a>
-        </div><!-- Connect END  -->
+        </section>
 
         <footer>
-                <div class="container">
-                  Copyright &copy; 
-                </div>
+            <p>Copyright &copy; 2026 Cesar McFarlin</p>
         </footer>
-        <script src="" async defer></script>
     </body>
-    
 </html>
